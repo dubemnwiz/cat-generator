@@ -1,0 +1,33 @@
+.display {
+    display: flex;
+    gap: 30px;
+}
+
+.attributes {
+    width: 300px;
+    height: 200px;
+}
+
+.attribute {
+    background-color: lavender;
+    color: black;
+    border-radius: 13px;
+}
+
+.ban-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 134, 134);
+    padding: 20px;
+}
+
+.list-box {
+    padding-left: 0;
+}
+
+.ban-list-item {
+    list-style-type: none;
+
+}
