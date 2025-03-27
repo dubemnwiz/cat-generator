@@ -39,19 +39,19 @@ export default function CatDisplay() {
 
   return (
     <div className="display">
-      <div className="flex-1 flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: 'url("/cat-collage.jpg")' }}>
-        <div className="bg-black/60 rounded-2xl p-10 shadow-xl">
-          <h1 className="text-4xl font-bold text-center mb-4">Veni Vici!</h1>
-          <p className="text-lg text-center mb-4">Discover cats from your wildest dreams!</p>
-          <p className="text-center text-2xl mb-4">😺😹😻😼😽🙀😿😸😾</p>
-          <div className="flex justify-center">
+      <div style={{ backgroundImage: 'url("/cat-collage.jpg")' }}>
+        <div>
+          <h1 >Veni Vici!</h1>
+          <p>Discover cats from your wildest dreams!</p>
+          <p>😺😹😻😼😽🙀😿😸😾</p>
+          <div>
             <button onClick={fetchCat}>
               🔄 Discover!
             </button>
           </div>
         </div>
         {catData && (
-          <div className="mt-6 w-[300px] bg-white text-black">
+          <div>
             <div>
                 <img
                     src={catData.url}
@@ -73,8 +73,8 @@ export default function CatDisplay() {
         )}
       </div>
       <div className="ban-list">
-        <h2 className="text-2xl font-semibold mb-4">Ban List</h2>
-        <p className="text-sm mb-2">Select an attribute in your listing to ban it</p>
+        <h2>Ban List</h2>
+        <p>Select an attribute in your listing to ban it</p>
         {banList.length === 0 && <p>No bans yet</p>}
         <ul className='list-box'>
           {banList.map((ban, index) => (
